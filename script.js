@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('#navbar .nav-item a');
 
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+//used firebase for storing contact us database
 function check()
 {
     let Name = document.getElementById('name').value;
