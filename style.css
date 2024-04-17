@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lugrasimo", cursive;
+    background-color: #00355C;
+}
+
+.bg{
+    background-image: url('./images/bey.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 98vh;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    z-index: 1 !important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#navbar {
+    transition: background-color 0.3s ease;
+}
+
+#navbar .nav-item a:hover {
+    color: orange !important; /* Change to the desired hover color */
+}
+
+a{
+    text-decoration: none !important;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+#para{
+    text-align: justify;
+}
+
+#bk{
+    width: 100vw;
+    height: 100vh;
+}
+
+.bey:hover{
+    animation-name: bey;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+    @keyframes bey{
+        to 
+        {
+        transform: rotate(360deg);
+        }
+    }
+
+@media (max-width:425px){
+    #bk{
+        height: 45vh;
+    }
+
+    .bg{
+        height:45vh;
+    }
+
+    #fh{
+        margin-top: 150px !important;
+        font-size: 30px !important;
+    }
+
+    #ph{
+        font-size: 20px !important;
+    }
+
+    .cn{
+        margin-bottom: 0px !important;
+    }
+
+    #bt{
+        margin-top: 25px !important;
+    }
+
+    .med{
+        width: 270px !important;
+    }
+}
